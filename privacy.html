@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — AutoShorts</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0e0e0f;
+    --surface: #161618;
+    --border: #2a2a2e;
+    --text: #e8e8e8;
+    --muted: #888;
+    --accent: #ff4d4d;
+  }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 2rem 0;
+    text-align: center;
+  }
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  .logo-mark {
+    width: 32px; height: 32px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .logo-mark svg { fill: white; width: 16px; height: 16px; }
+  .logo-text { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--text); }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+  .page-label {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+  .date {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--border);
+  }
+  h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.25rem;
+    color: var(--text);
+    margin: 2.5rem 0 0.75rem;
+  }
+  p {
+    color: #aaa;
+    font-size: 15px;
+    margin-bottom: 1rem;
+  }
+  ul {
+    padding-left: 1.25rem;
+    color: #aaa;
+    font-size: 15px;
+    margin-bottom: 1rem;
+  }
+  li { margin-bottom: 0.4rem; }
+  .highlight-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 12px 12px 0;
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0;
+  }
+  .highlight-box p { margin: 0; font-size: 14px; color: var(--muted); }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  @media (max-width: 500px) { .grid { grid-template-columns: 1fr; } }
+  .grid-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem;
+  }
+  .grid-item-label {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+  }
+  .grid-item-val {
+    font-size: 14px;
+    color: var(--text);
+    font-weight: 500;
+  }
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem;
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+    <span class="logo-text">AutoShorts</span>
+  </div>
+</header>
+
+<div class="container">
+  <div class="page-label">Legal</div>
+  <h1>Privacy Policy</h1>
+  <div class="date">Last updated: April 29, 2026</div>
+
+  <div class="highlight-box">
+    <p>AutoShorts is a personal automation tool. We do not collect, store, sell, or share any personal data from users or third parties. This policy explains in full what data is handled and how.</p>
+  </div>
+
+  <h2>1. Information We Do Not Collect</h2>
+  <p>AutoShorts does not collect any of the following:</p>
+  <ul>
+    <li>Personal identifying information (name, email, address, phone number)</li>
+    <li>Financial or payment information</li>
+    <li>Location data</li>
+    <li>Browsing history or behavioral data</li>
+    <li>Data from your social media followers or audience</li>
+    <li>Any analytics or tracking data from third parties</li>
+  </ul>
+
+  <h2>2. How the App Works</h2>
+  <p>AutoShorts operates entirely on your local machine or personal server. The App:</p>
+  <ul>
+    <li>Reads publicly available trending topic data from Google Trends and YouTube</li>
+    <li>Sends topic prompts to the Anthropic Claude API to generate video scripts</li>
+    <li>Downloads royalty-free stock footage from the Pexels API</li>
+    <li>Uploads rendered videos to your own YouTube and TikTok accounts using your personal API credentials</li>
+  </ul>
+  <p>All API credentials are stored locally in your own environment file and are never transmitted to or stored by AutoShorts.</p>
+
+  <h2>3. Third-Party API Usage</h2>
+  <p>The App communicates with the following third-party services on your behalf:</p>
+
+  <div class="grid">
+    <div class="grid-item"><div class="grid-item-label">AI Scripts</div><div class="grid-item-val">Anthropic API</div></div>
+    <div class="grid-item"><div class="grid-item-label">Video Upload</div><div class="grid-item-val">YouTube Data API v3</div></div>
+    <div class="grid-item"><div class="grid-item-label">Video Upload</div><div class="grid-item-val">TikTok Content API</div></div>
+    <div class="grid-item"><div class="grid-item-label">Stock Footage</div><div class="grid-item-val">Pexels API</div></div>
+  </div>
+
+  <p>Each of these services has its own privacy policy. Your use of these services through the App is governed by their respective policies. AutoShorts does not intercept, store, or log any data exchanged between your device and these services.</p>
+
+  <h2>4. API Credentials</h2>
+  <p>Your API keys, OAuth tokens, and access credentials are stored only in your local <code style="background:#1e1e20;padding:2px 6px;border-radius:4px;font-size:13px;color:#ff4d4d">.env</code> file on your own device or server. These credentials are never sent to, stored by, or accessible to AutoShorts or any third party other than the intended API provider.</p>
+
+  <h2>5. Cookies and Tracking</h2>
+  <p>AutoShorts does not use cookies, tracking pixels, analytics scripts, or any form of user tracking. This website exists solely to satisfy legal URL requirements for third-party API access and does not collect any visitor data.</p>
+
+  <h2>6. Children's Privacy</h2>
+  <p>AutoShorts is not directed at children under the age of 13. We do not knowingly collect any information from children. If you believe a child has used this App inappropriately, please discontinue use.</p>
+
+  <h2>7. Data Security</h2>
+  <p>Since AutoShorts does not collect or store any user data, there is no personal data at risk. You are responsible for securing your own API credentials and device.</p>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date. Continued use of the App after changes constitutes acceptance of the revised policy.</p>
+
+  <h2>9. Contact</h2>
+  <p>If you have any questions about this Privacy Policy, please refer to the contact information in your App documentation.</p>
+
+</div>
+
+<footer>
+  <p>© 2026 AutoShorts · <a href="terms.html">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>
